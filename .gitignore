@@ -33,6 +33,9 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Web related
+lib/generated_plugin_registrant.dart
+
 # Symbolication related
 app.*.symbols
 
@@ -43,3 +46,157 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Additional Flutter/Dart patterns
+*.g.dart
+*.freezed.dart
+*.gr.dart
+*.config.dart
+*.mocks.dart
+.packages
+pubspec.lock
+
+# Environment and configuration files
+.env
+.env.local
+.env.*.local
+*.config.local.*
+firebase_options.dart
+
+# Coverage reports
+coverage/
+test/.test_coverage.dart
+
+# IDE and Editor files
+.vscode/launch.json
+.vscode/settings.json
+*.sublime-project
+*.sublime-workspace
+.project
+.metadata
+.classpath
+.c9/
+*.launch
+.settings/
+.loadpath
+.externalToolBuilders/
+.cproject
+.autotools
+.factorypath
+.buildpath
+.target
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100
+.Trashes
+._*
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# iOS specific
+**/ios/build/
+**/ios/DerivedData/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner.app
+**/ios/Runner.ipa
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Android specific
+**/android/.gradle/
+**/android/build/
+**/android/gradle/
+**/android/local.properties
+**/android/tmp/
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/gradle-wrapper.jar
+**/android/key.properties
+**/android/.externalNativeBuild/
+**/android/app/google-services.json
+
+# Linux specific
+**/linux/build/
+
+# macOS specific
+**/macos/build/
+**/macos/Flutter/ephemeral/
+
+# Windows specific
+**/windows/build/
+**/windows/flutter/ephemeral/
+
+# Web specific
+**/web/build/
+
+# Firebase
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# FVM (Flutter Version Management)
+.fvm/flutter_sdk
+
+# Mason
+.mason/
+
+# Generated files
+*.mocks.dart
+*.config.dart
+lib/generated/
+
+# Test coverage
+lcov.info
+coverage/
+test_coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
