@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'core/theme/theme.dart';
 import 'presentation/widgets/custom_bottom_navigation.dart';
 import 'presentation/screens/home_page.dart';
 
@@ -13,21 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Devotion Bless',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF2196F3),
-          brightness: Brightness.light,
-        ),
-        useMaterial3: true,
-      ),
-      darkTheme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF2196F3),
-          brightness: Brightness.dark,
-        ),
-        useMaterial3: true,
-      ),
-      themeMode: ThemeMode.dark, // Force dark mode
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system, // Follow system theme preference
       home: const MainScreen(),
     );
   }

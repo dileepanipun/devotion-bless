@@ -64,28 +64,39 @@ flutter:
     - assets/images/icons/other/
     - assets/images/profile/
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  # Custom fonts configuration
+  fonts:
+    # Primary font family - Exo 2 (English and international)
+    - family: Exo
+      fonts:
+        # Variable fonts (preferred)
+        - asset: assets/fonts/exo/Exo2-VariableFont_wght.ttf
+        - asset: assets/fonts/exo/Exo2-Italic-VariableFont_wght.ttf
+          style: italic
+        # Static fonts (fallbacks)
+        - asset: assets/fonts/exo/static/Exo2-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/exo/static/Exo2-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/exo/static/Exo2-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/exo/static/Exo2-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/exo/static/Exo2-Italic.ttf
+          weight: 400
+          style: italic
+    
+    # Secondary font family - Noto Sans Sinhala (Sinhala language support)
+    - family: NotoSansSinhala
+      fonts:
+        # Variable font (preferred) - supports both width and weight variations
+        - asset: assets/fonts/noto-sans-sinhala/NotoSansSinhala-VariableFont_wdth,wght.ttf
+        # Static fonts (fallbacks)
+        - asset: assets/fonts/noto-sans-sinhala/static/NotoSansSinhala-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/noto-sans-sinhala/static/NotoSansSinhala-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/noto-sans-sinhala/static/NotoSansSinhala-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/noto-sans-sinhala/static/NotoSansSinhala-Bold.ttf
+          weight: 700
